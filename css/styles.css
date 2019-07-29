@@ -1,8 +1,52 @@
- body {
+ bodsy {
      font-family: Arial, Helvetica, sans-serif;
      color: red;
-     background-image: url(https://www.purpleorchid.com/wp-content/uploads/2019/07/pizza-in-livermore.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     padding-top: 14%;
+     text-align: center;
  }
- .block1 {
-     
+ #slider {
+     overflow: hidden;
+ }
+ #slider figure {
+     position: relative;
+     width: 500%;
+     margin: 0%;
+     left: 0%;
+     animation: 20s slider infinite;
+ }
+ #slider figure img {
+     width: 20%;
+     float: left;
+ }
+ @keyframes slider {
+     0% {
+         left: 0%;
+     }
+     20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
  }
