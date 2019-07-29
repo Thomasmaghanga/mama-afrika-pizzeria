@@ -1,56 +1,29 @@
- body {
+body {
      font-family: Arial, Helvetica, sans-serif;
-     color: white;
-    
- }
- nav.shrink {
-    background-color: black;
-    height: 60px;
-    padding-top: 0px;
- }
- nav.shrink.navbar-logo {
-     font-size: 20px;
-     padding: 30px 0px 0px 80px;
-     color: white;
- }
- nav.shrink>li>a {
-     color: white;
-     font-size: 16px;
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     padding-top: 30px;
- }
- ul {
-     margin: 0px;
-     padding: 0px;
-     list-style: none;
-     
- }
- ul li {
-     float: left;
-     width: 200px;
-     height: 40px;
-     background-color: black;
-     line-height: 40px;
-     text-align: center;
-     font-size: 20px;
-     margin-right: 3px;
- }
- ul li a {
-     text-decoration: none;
-     color: white;
-     display: block;
- }
- ul li a:hover {
-     background-color: yellowgreen;
- }
- ul li ul li {
-     display: none;
- }
- ul li:hover ul li {
-     display: block;
- }
- #slider {
+     color: white;    
+}
+#nav {
+    height: 70px;
+    background: black;
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease .5s;
+}  
+#logo {
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
+    transition: all ease .5s;
+}
+#nav.change {
+    background: red;
+    transition: all ease .5s;
+}
+#slider {
      overflow: hidden;
+     width: 100%;
  }
  #slider figure {
      position: relative;
@@ -85,7 +58,7 @@
     75% {
         left: -300%;
     }
-    95% {
+    90% {
         left: -300%;
     }
     100% {
