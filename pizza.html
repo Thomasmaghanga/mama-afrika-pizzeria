@@ -9,6 +9,8 @@
     <link rel="icon" href="./img/slice.png" type="image/png">
 </head>
 <body>
+    <br>
+    <div id="navigationBar">
     <ul>
         <li><a>Home</a></li>
         <li><a>About Us</a>
@@ -21,9 +23,9 @@
             </ul></li>
         <li><a>Specials</a>
             <ul> 
-                <li><a>Medium Double Feast</a></li>
-                <li><a>Large Double Feast</a></li>
-                <li><a>Mega Feast</a></li>
+                <li><a>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+                <li><a>Aliquam tincidunt mauris eu risus.</a></li>
+                <li><a>Vestibulum auctor dapibus neque.</a></li>
             </ul></li>
         <li><a>Contact Us</a>
             <ul>
@@ -32,6 +34,8 @@
                 <li><a>Pinterest</a></li>
             </ul></li>
     </ul>
+    </div>
+    <br><br>
     <div id="slider">
         <figure>
             <img src="../pizza/img/pizza1.jpg" alt="Mouth watering pizza">
@@ -41,6 +45,115 @@
             <img src="../pizza/img/pizza7.jpg" alt="Mouth watering pizza">
         </figure>
     </div>
-    
+    <div class="container" id="orderForm">
+        <h1>Order Your Pizza</h1>
+        <br>
+        <h2>(Click on a heading to expand that option)</h2>
+    <br>
+    <div id="sizetable">
+        <h3 class="tablehead">Select size*:</h3>
+    <div class="menu initiallyHidden">	
+            <input type="radio" name="size" value="Personal"> Personal<br>
+            <input type="radio" name="size" value="Medium"> Medium<br>
+            <input type="radio" name="size" value="Large"> Large<br>
+            <input type="radio" name="size" value="Extra-Large"> Extra-Large<br>
+    </div>
+    </div>
+    <br>
+    <div id="cheesetable">
+        <h3 class="tablehead">Select cheese*:</h3>
+    <div class="menu initiallyHidden">	
+            <input type="radio" name="cheese" value="No"> No Cheese<br>
+            <input type="radio" name="cheese" value="Regular"> Regular<br>
+            <input type="radio" name="cheese" value="Extra"> Extra Cheese<br>
+    </div>
+    </div>
+    <br>
+    <div id="crusttable">
+    <h3 class="tablehead">Select crust*:</h3>
+    <div class="menu initiallyHidden">	
+            <input type="radio" name="crust" value="Plain"> Plain Crust<br>
+            <input type="radio" name="crust" value="Garlic Butter"> Garlic Butter Crust<br>
+            <input type="radio" name="crust" value="Cheese-Stuffed"> Cheese-Stuffed Crust<br>
+            <input type="radio" name="crust" value="Spicy"> Spicy Crust<br>
+            <input type="radio" name="crust" value="House Special"> House Special Crust<br>
+    </div>
+    </div>
+    <br>
+    <div id="saucetable">
+        <h3 class="tablehead">Select sauce*:</h3>
+    <div class="menu initiallyHidden">	
+            <input type="radio" name="sauce" value="Marinara"> Marinara Sauce<br>
+            <input type="radio" name="sauce" value="White"> White Sauce<br>
+            <input type="radio" name="sauce" value="Barbecue"> Barbecue Sauce<br>
+            <input type="radio" name="sauce" value="No"> No Sauce<br>
+    </div>
+    </div>
+    <br>
+    <div id="meattable">
+        <h3 class="tablehead">Select your choice of meat(s):</h3>
+    <div class="menu initiallyHidden">
+            <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="meat" value="Sausage"> Sausage<br>
+            <input type="checkbox" name="meat" value="Canadian Bacon"> Canadian Bacon<br>
+            <input type="checkbox" name="meat" value="Ground Beef"> Ground Beef<br>
+            <input type="checkbox" name="meat" value="Anchovies"> Anchovies<br>
+            <input type="checkbox" name="meat" value="Chicken"> Chicken<br>
+    </div>
+    </div>
+    <br>
+    <div id="vegtable">
+        <h3 class="tablehead">Select your choice of veggie(s):</h3>
+    <div class="menu initiallyHidden">
+            <input type="checkbox" name="veg" value="Tomatoes"> Fresh Tomatoes<br>
+            <input type="checkbox" name="veg" value="Onions"> Onions<br>
+            <input type="checkbox" name="veg" value="Olives"> Black Olives<br>
+            <input type="checkbox" name="veg" value="Green Peppers"> Green Peppers<br>
+            <input type="checkbox" name="veg" value="Mushrooms"> Mushrooms<br>
+            <input type="checkbox" name="veg" value="Pineapple"> Pineapple<br>
+            <input type="checkbox" name="veg" value="Spinach"> Spinach<br>
+            <input type="checkbox" name="veg" value="Jalape&ntildeo"> Jalape&ntildeo<br>
+    </div>
+    </div>
+    <br>
+    <br>
+            <button id="calc" type="submit" onclick="invoice()">Submit order</button>
+            <br><br>
+            <table class="pizza" style="width: 50%;" border="1" cellpadding="5">
+                <tbody>
+                    <tr>
+                        <td id="size"></td>
+                        <td id="sizeprice"></td>
+                    </tr>
+                    <tr>
+                        <td id="crust"></td>
+                        <td id="crustprice"></td>
+                    </tr>
+                    <tr>
+                        <td id="cheese"></td>
+                        <td id="cheeseprice"></td>
+                    </tr>
+                    <tr>
+                        <td id="sauce"></td>
+                        <td id="sauceprice"></td>
+                    </tr>
+                    <tr>
+                        <td id="meat"></td>
+                        <td id="meatprice"></td>
+                    </tr>
+                    <tr>
+                        <td id="veg"></td>
+                        <td id="vegprice"></td>
+                    </tr>
+                    <tr>
+                      <td><strong>TOTAL PRICE:</strong></td>
+                        <td id="totalprice"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+        </div>
+    </div>
 </body>
 </html>
