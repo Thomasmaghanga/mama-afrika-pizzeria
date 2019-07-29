@@ -1,11 +1,7 @@
- bodsy {
+ body {
      font-family: Arial, Helvetica, sans-serif;
-     color: red;
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     padding-top: 14%;
-     text-align: center;
+     color: black;
+    
  }
  #slider {
      overflow: hidden;
