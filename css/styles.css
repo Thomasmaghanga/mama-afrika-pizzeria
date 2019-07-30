@@ -149,4 +149,10 @@ button {
 }
 #yourOrder {
     color: greenyellow;
+    text-align: center;
+    text-underline-position: below;
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
 }
