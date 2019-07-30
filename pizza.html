@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../pizza/js/scripts.js"></script>
+    <title>Pizza Express</title>
+    <link rel="icon" href="./img/slice.png" type="image/png">
+</head>
+
+<body>
+    <div id="nav">
+        <div id="logo">Pizza Express</div>
+        <a href="http://www.facebook.com"><img class="logo2" src="../delani/images/social_icons/facebook.png"
+                alt="Facebook icon"></a>
+        <a href="http://www.twitter.com"><img class="logo2" src="../delani/images/social_icons/twitter.png"
+                alt="Twitter icon"></a>
+        <a href="http://www.pinterest.com"><img class="logo2" src="../delani/images/social_icons/pinterest.png"
+                alt="Pinterest icon"></a>
+    </div>
+    <div id="slider">
+        <figure>
+            <img src="../pizza/img/pizza1.jpg" alt="Mouth watering pizza">
+            <img src="../pizza/img/pizza9.jpg" alt="Mouth watering pizza">
+            <img src="../pizza/img/pizza8.jpg" alt="Mouth watering pizza">
+            <img src="../pizza/img/pizza5.jpg" alt="Mouth watering pizza">
+            <img src="../pizza/img/pizza7.jpg" alt="Mouth watering pizza">
+        </figure>
+    </div>
+    <div class="box">
+        <a href="#order">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+    <div id="order" class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <br><br>
+                    <h1 class="centerAlgned">Make Your Order</h1><br><br><br>
+                </div>
+                <form id="form" action="">
+                    <label for="select" class="center">Type Of Pizza:</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 " id="type">
+                        <option value="Meat Deluxe">Meat Deluxe</option>
+                        <option value="BBQ Macon">BBQ Macon</option>
+                        <option value="Chicken PeriPeri">Chicken PeriPeri</option>
+                        <option value="Buffalo Cauliflower Wing with Tofu Blue Cheese Spread">Buffalo Cauliflower Wing with Tofu Blue Cheese Spread</option>
+                        <option value="Vegan Margherita">Vegan Margherita</option>
+                        <option value="Eggplant and Caramelized Onions">Eggplant and Caramelized Onions</option>
+                    </select><br><br>
+                    <label for="select">Size</label>
+                    <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                        <option value="Large">Large - Ksh 1,000</option>
+                        <option value="Medium">Medium - Ksh 800</option>
+                        <option value="Small">Small - Ksh 600</option>
+                    </select><br><br>
+                    <label for="crust">Crust</label>
+                    <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                        <option value="Regular">Regular - Ksh 100</option>
+                        <option value="Crispy">Crispy - Ksh 150</option>
+                        <option value="Gluten-free">Gluten-free - Ksh 200</option>
+                        <option value="Stuffed">Stuffed - Ksh 250</option>
+                    </select><br><br>
+                    <label for="Toppings">Toppings. Each For Ksh 70.</label><br>
+                    <input type="checkbox" name="toppings" id="Macon" value="Macon"> Macon<br>
+                    <input type="checkbox" name="toppings" id="Pepperoni" value="Pepperoni"> Pepperoni<br>
+                    <input type="checkbox" name="toppings" id="Chicken" value="Chicken"> Chicken<br>
+                    <input type="checkbox" name="toppings" id="Cauliflower" value="Cauliflower"> Cauliflower<br>
+                    <input type="checkbox" name="toppings" id="Tomato" value="Cherry Tomato Slices"> Cherry Tomato
+                    Slices<br>
+                    <input type="checkbox" name="toppings" id="Eggplant" value="Eggplant"> Eggplant<br><br>
+                    <button type="submit" class="btn btn-info proceed" id="continue">Continue</button>
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div id="choice">
+                <br><br>
+                <h2>This Is Your Order</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Type</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">Crust</th>
+                            <th scope="col">Topping</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inputorder">
+                        <tr>
+                            <td id="pizzatype"></td>
+                            <td id="pizzasize"></td>
+                            <td id="pizzacrust"></td>
+                            <td id="pizzatopping"></td>
+                            <td id="totals"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="pizzatotal"></p>
+                <p id="totalamount"></p>
+                <p id="plusdelivery">Delivery Fee Of Ksh 200</p>
+                <p id="finalmessage"></p>
+            </div>
+            <button class="btn btn-danger add-pizza">Add Pizza</button>
+            <button class="btn btn-danger" id="complete">Complete Order</button>
+            <button class="btn btn-danger deliver">Delivery</button>
+        </div>
+    </div><br><br>
+    <div class="delivery">
+        <div class="container">
+            <form action="">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
+                    <input type="text" id="location" class="form-control mb-3" placeholder="Delivery location">
+                    <button class="btn btn-success" id="final-order">Place order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>Pizza Express | Eat Responsibly</footer>
+</body>
+
+</html>
