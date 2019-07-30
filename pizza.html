@@ -34,9 +34,10 @@
     </div>
     <div class="container" id="orderForm">
         <br><br>
-        <h1>Make Your Order</h1>
+        <h1 id="yourOrder">Make Your Order</h1>
         <br><br>
-        <div id="sizetable">
+        <div class="row">
+        <div id="sizetable" class="col-md-2">
             <h3 class="tablehead"><button> Size </button></Size-></h3>
         <div class="menu initiallyHidden">	
                 <input type="radio" name="size" value="Personal">Small<br>
@@ -46,7 +47,7 @@
         </div>
         </div>
         <br>
-        <div id="cheesetable">
+        <div id="cheesetable" class="col-md-2">
             <h3 class="tablehead"><button> Cheese </button></h3>
         <div class="menu initiallyHidden">	
                 <input type="radio" name="cheese" value="No"> None<br>
@@ -55,7 +56,7 @@
         </div>
         </div>
         <br>
-        <div id="crusttable">
+        <div id="crusttable" class="col-md-2">
             <h3 class="tablehead"><button> Crust </button></h3>
         <div class="menu initiallyHidden">	
                 <input type="radio" name="crust" value="Plain">Plain<br>
@@ -66,7 +67,7 @@
         </div>
         </div>
         <br>
-        <div id="saucetable">
+        <div id="saucetable" class="col-md-2">
             <h3 class="tablehead"><button> Sauce </button></h3>
         <div class="menu initiallyHidden">	
                 <input type="radio" name="sauce" value="Marinara">Marinara<br>
@@ -76,7 +77,7 @@
         </div>
         </div>
         <br>
-        <div id="meattable">
+        <div id="meattable" class="col-md-2">
             <h3 class="tablehead"><button> Meat </button></h3>
         <div class="menu initiallyHidden">
                 <input type="checkbox" name="meat" value="Pepperoni">Pepperoni<br>
@@ -88,7 +89,7 @@
         </div>
         </div>
         <br>
-        <div id="vegtable">
+        <div id="vegtable" class="col-md-2">
             <h3 class="tablehead"><button> Veggies </button></h3>
         <div class="menu initiallyHidden">
                 <input type="checkbox" name="veg" value="Tomatoes">Fresh Tomatoes<br>
@@ -101,9 +102,12 @@
                 <input type="checkbox" name="veg" value="Jalape&ntildeo">Jalape&ntildeo<br>
         </div>
         </div>
+    </div>
         <br>
         <br>
+            <div id="makeOrder">
             <button id="calc" type="submit" onclick="invoice()">Make Order</button>
+            </div>
             <br><br>
             <table class="pizza" style="width: 50%;" border="1" cellpadding="5">
                 <tbody>

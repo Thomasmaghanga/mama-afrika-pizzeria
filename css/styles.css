@@ -139,3 +139,14 @@ body {
 html{
     scroll-behavior: smooth;
 }
+button {
+    color: red;
+    background-color: yellow;
+}
+#makeOrder {
+    background-color: greenyellow;
+    text-align: center;
+}
+#yourOrder {
+    color: greenyellow;
+}
