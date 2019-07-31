@@ -133,7 +133,8 @@ body {
 }
 #order {
     text-align: center;
-    align-content: center;
+    align-items: center;
+    position: relative;
 }
 #form  {
     text-align: center;
